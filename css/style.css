@@ -11,6 +11,8 @@
     font-family: 'Work Sans', sans-serif;
     color: white;
     scroll-behavior: smooth;
+    /* max-width: 100%;
+    box-sizing: border-box; */
 }
 
 html{
@@ -24,10 +26,7 @@ body{
     max-width: 100%;
 }
 
-.sub-text{
-    color: var(--light-white);
-    margin-top: -12px;
-}
+
 header{
     background-color: #22252D;
     color: white;
@@ -119,7 +118,11 @@ header{
 
 }
 
-/* home */
+.sub-text{
+    color: var(--light-white);
+    margin-top: -12px;
+    height: 20px;
+}
 
 .home{
     display: flex;
@@ -302,6 +305,7 @@ section{
 }
 .contacts>div:first-of-type{
     display: flex;
+    cursor: pointer;
 
 }
 
@@ -348,10 +352,10 @@ footer>div:first-child>p{
 
 }
 
-footer>:nth-child(2)>i{
+footer>:nth-child(2)>a>i{
     font-size: 1.5rem;
     color: var(--light-white);
-
+    cursor: pointer;
 }
 
 /* Mobile */
@@ -529,7 +533,7 @@ footer>:nth-child(2)>i{
         
     }
     .contacts>div:first-of-type>div:first-child{
-        width: 40vw;
+        width: 70vw;
         margin: 0 auto;
         /* margin-bottom: 30px; */
     }
@@ -551,3 +555,10 @@ footer>:nth-child(2)>i{
     }
 
 }
+
+/* Tablet */
+/* @media screen and (min-width: 767px) and (max-width: 1023px) {
+    body{
+        height: 20vh;
+    }
+  } */
