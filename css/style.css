@@ -13,8 +13,15 @@
     scroll-behavior: smooth;
 }
 
+html{
+    
+    overflow-x: hidden;
+    
+}
+
 body{
     background-color: #02060F;
+    max-width: 100%;
 }
 
 .sub-text{
@@ -30,7 +37,8 @@ header{
     /* flex-wrap: wrap; */
     /* width: ; */
     position: fixed;
-    width: calc(100% - 140px);top: 0;
+    width: calc(100% - 140px);
+    top: 0;
     left: 0;
     z-index: 1000;
     border-radius: 50rem;
@@ -183,7 +191,7 @@ span{
 }
 
 .education-item{
-    width: 30rem;
+    /* width: 30rem; */
     /* background-color: #99f993; */
     padding: 20px 0;
     color: var(--light-white);
@@ -202,8 +210,17 @@ span{
 
 /* skills section */
 
+.skills{
+    width: 100vw;
+}
+
 .skills>div{
     padding: 5rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills>div>div{
@@ -413,16 +430,74 @@ footer>:nth-child(2)>i{
         /* width: 100%; */
     }
 
+    
+    .aboutMe>div:last-child>div{
+        text-align: justify;
+        width: 97%;
+    }
+
     .education{
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         height: auto;
         padding-top: 5rem;
+
     }
+
+    .education-item{
+        width: 20rem ;
+        /* background-color: #99f993; */
+        padding: 20px 10px;
+        color: var(--light-white);
+    }
+
     .education>.line{
         display: none;
     }
+
+    /* skills */
+
+    .skills{
+        /* width: 100vw; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .skills>div{
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+        /* flex: 1 1 auto; */
+    }
+
+
+
+    .skills>div>div{
+        /* width: ; */
+        display: flex;
+        justify-content: center;
+        /* padding: 2rem 5rem; */
+        /* background-color: #98999D; */
+        /* width: 10px auto; */
+        border: 2px solid white;
+        border-radius: 3px;
+    }
+
+    .skills>div>div>img{
+        width: 3rem auto;
+    }
+    
 
 
     /* project */
@@ -434,7 +509,7 @@ footer>:nth-child(2)>i{
     }
 
     .project>div>div{
-        width: 50vw;
+        width: 100vw;
         margin: 0 auto;
     }
 

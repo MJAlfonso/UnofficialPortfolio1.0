@@ -80,11 +80,11 @@
         <!-- {{-- education and experiences --}} -->
             <div class="education d-flex justify-content-evenly align-items-center flex-wrap">
                 <div class="d-flex justify-content-center align-items-center">
-                    <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><i class="bi bi-briefcase"> </i> Education & Experiences</h2>
+                    <h2 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"><i class="bi bi-briefcase"> </i> Education & Experiences</h2>
                 </div>
                 <div class="line"></div>
                 <div>
-                    <div class="education-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="education-item" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                         <p>BS Information Technology</p>
                         <div class="d-flex justify-content-between">
                             <p>Pampanga State Agricultural Univerity</p>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="education-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="education-item" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                         <p>IT in Mobile Application and Web Development</p>
                         <div class="d-flex justify-content-between">
                             <p>STI College Angeles</p>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="education-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="education-item" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                         <p>Hello world!</p>
                         <div class="d-flex justify-content-between">
                             <p>Wrote my first line of code</p>
@@ -112,13 +112,13 @@
 
             <!-- {{-- Skills section --}} -->
             <section id="skills" class="skills">
-                <h1 data-aos="fade-up" data-aos-duration="3000"  class="text-center pt-4"><i class="bi bi-view-stacked"> </i> Technology and Skills</h1>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <div data-aos="fade-up" >
+                <h1 data-aos="fade-down" data-aos-duration="3000"  class="text-center pt-4"><i class="bi bi-view-stacked"> </i> Technology and Skills</h1>
+                <div>
+                    <div data-aos="fade-up">
                         <img src="images/php.png" alt="Php icon">
                     </div>
                     
-                    <div data-aos="fade-up"  >
+                    <div data-aos="fade-up">
                         <img src="images/js.png" alt="Php icon">
                     </div>
 
@@ -306,7 +306,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-          AOS.init();
+          AOS.init({
+            // duration: 1000, // Adjust animation duration
+            once: true, // Ensures animation happens only once
+        });
 
         var typed = new Typed('#sub-text', {
             strings: ['an aspiring Web Developer', 'an Information Technology Student', "Very cutesy"],
@@ -317,11 +320,11 @@
         });
 
           document.getElementById("profile").onmouseover = function(){
-            this.src = "{{asset('images/profileHover.jpg')}}";
+            this.src = "images/profileHover.jpg";
           }
 
           document.getElementById("profile").onmouseout = function(){
-            this.src = "{{asset('images/profile.jpg')}}";
+            this.src = "images/profile.jpg";
           }
 
           window.addEventListener("scroll", function () {
