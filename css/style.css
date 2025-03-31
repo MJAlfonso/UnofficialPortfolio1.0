@@ -357,6 +357,13 @@ footer>:nth-child(2)>i{
 /* Mobile */
 
 @media screen and (max-width:767px){
+
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+
     header{
     margin-left: 0;
     margin-right: 0;
@@ -509,7 +516,7 @@ footer>:nth-child(2)>i{
     }
 
     .project>div>div{
-        width: 100vw;
+        width: 90vw;
         margin: 0 auto;
     }
 
@@ -526,6 +533,9 @@ footer>:nth-child(2)>i{
         margin: 0 auto;
         /* margin-bottom: 30px; */
     }
+
+    
+    
 
     /* footer */
 

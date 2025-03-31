@@ -14,7 +14,7 @@
     
     <title>MJA</title>
 </head>
-<body>
+<body id="body">
     <script>
         
     </script>
@@ -27,7 +27,7 @@
                 </div>
                 <nav id="menuList" class="row gap-3">
                     <!-- {{-- navigations --}} -->
-                    <div class="nav-item col"><a href="#">Home</a></div>
+                    <div class="nav-item col"><a href="#body">Home</a></div>
                     <div class="nav-item col"><a href="#aboutMe">About</a></div>
                     <div class="nav-item col"><a href="#skills">Skills</a></div>
                     <div class="nav-item col"><a href="#project">Project</a></div>
@@ -80,11 +80,11 @@
         <!-- {{-- education and experiences --}} -->
             <div class="education d-flex justify-content-evenly align-items-center flex-wrap">
                 <div class="d-flex justify-content-center align-items-center">
-                    <h2 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"><i class="bi bi-briefcase"> </i> Education & Experiences</h2>
+                    <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><i class="bi bi-briefcase"> </i> Education & Experiences</h2>
                 </div>
                 <div class="line"></div>
                 <div>
-                    <div class="education-item" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="education-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <p>BS Information Technology</p>
                         <div class="d-flex justify-content-between">
                             <p>Pampanga State Agricultural Univerity</p>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="education-item" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="education-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <p>IT in Mobile Application and Web Development</p>
                         <div class="d-flex justify-content-between">
                             <p>STI College Angeles</p>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="education-item" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="education-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <p>Hello world!</p>
                         <div class="d-flex justify-content-between">
                             <p>Wrote my first line of code</p>
@@ -112,13 +112,13 @@
 
             <!-- {{-- Skills section --}} -->
             <section id="skills" class="skills">
-                <h1 data-aos="fade-down" data-aos-duration="3000"  class="text-center pt-4"><i class="bi bi-view-stacked"> </i> Technology and Skills</h1>
-                <div>
-                    <div data-aos="fade-up">
+                <h1 data-aos="fade-up" data-aos-duration="3000"  class="text-center pt-4"><i class="bi bi-view-stacked"> </i> Technology and Skills</h1>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <div data-aos="fade-up" >
                         <img src="images/php.png" alt="Php icon">
                     </div>
                     
-                    <div data-aos="fade-up">
+                    <div data-aos="fade-up"  >
                         <img src="images/js.png" alt="Php icon">
                     </div>
 
@@ -279,7 +279,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="#home" class="text-decoration-none fs-3"><p>Back to top <i class="arrowBack bi bi-arrow-up"></i></p></a>
+                    <a href="#body" class="text-decoration-none fs-3"><p>Back to top <i class="arrowBack bi bi-arrow-up"></i></p></a>
                 </div>
             </section>
 
@@ -306,10 +306,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-          AOS.init({
-            // duration: 1000, // Adjust animation duration
-            once: true, // Ensures animation happens only once
-        });
+          AOS.init();
 
         var typed = new Typed('#sub-text', {
             strings: ['an aspiring Web Developer', 'an Information Technology Student', "Very cutesy"],
