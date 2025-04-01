@@ -188,6 +188,10 @@ span{
 
 .education{
     height: 90vh;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    width: 100vw;
     
 }
 
@@ -336,6 +340,7 @@ section{
 
 .contacts>div:last-child>a>p>i{
     color: var(--green);
+    /* margin-top: auto; */
 
 }
 
@@ -343,6 +348,7 @@ section{
     animation: bounce 1s infinite ease-in-out;
     display: inline-block; 
     font-size: 30px; 
+    margin-top: auto;
 }
 
 /* Footer section */
